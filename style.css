@@ -1,0 +1,131 @@
+:root {
+   --Verydarkgrayishblue: hsl(237, 12%, 33%);
+   --Darkgrayishblue: hsl(240, 6%, 50%);
+   --Lightgrayishblue: hsl(240, 5%, 91%);
+   --Fontsize: 12px;
+ }
+ * {
+    box-sizing: border-box;
+  } 
+html {
+    font-size: var(--Fontsize);
+}
+body {
+    margin: 0;
+    font-family: 'kumbh Sans', sans-serif;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+ /* .wrapper{
+    background: white;
+    border-radius: 30px;
+    height: 509px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
+    
+}  */
+ /* .answer  {
+    display: none;
+} */
+.accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 200;
+
+}
+.accordion_questions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.question_answer_accordion {
+  width: 350px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.title_accordion {
+  font-size: 3rem;
+  margin-top: 0px;
+}
+.question_title {
+    font-size: 1.2rem;
+    font-weight: 1.4rem 0rem;
+    margin: 1.4rem 0rem;
+    color: (var(--Verydarkgrayishblue));
+
+
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.question img  {
+  align-self: center; 
+}
+.image_wrapper {
+    position: relative;
+}
+.image_wrapper_inner {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+.box {
+    position: absolute;
+    top: 42%;
+    left: -25%;
+}
+
+.active h3 {
+    font-weight: 70;
+} 
+
+.responsive {
+    background: white;
+    border-radius: 30px;
+    height: 509px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
+    
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    background-position: center;
+
+}
+#grad1{
+    position: relative;
+}
+.satu {
+    position: relative;
+    right: 10%;
+    bottom: 200;
+    
+}
+.dua {
+    position: relative;
+    top: 150;
+    right: 600;
+}
+ .tiga {
+    width: 40px;
+} 
+.active, .question:hover {
+    background-color: #ccc; 
+  }
+  
+  .answer {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
